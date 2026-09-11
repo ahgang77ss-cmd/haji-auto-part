@@ -927,6 +927,47 @@ body { margin:0 !important; }
 }
 </style>
 
+
+<style id="mobile-horizontal-parts">
+@media (max-width: 700px) {
+  /* Only the product list inside each car section becomes a horizontal carousel. */
+  .products-grid, .parts-grid, .product-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 12px !important;
+    padding: 4px 2px 14px !important;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .products-grid > *, .parts-grid > *, .product-grid > * {
+    flex: 0 0 78% !important;
+    width: 78% !important;
+    max-width: 78% !important;
+    min-width: 0 !important;
+    scroll-snap-align: start;
+  }
+
+  /* Keep the page itself from becoming horizontally scrollable. */
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+
+  /* Visible scrollbar on supported browsers so the horizontal list is obvious. */
+  .products-grid::-webkit-scrollbar,
+  .parts-grid::-webkit-scrollbar,
+  .product-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+}
+</style>
+
 </head>
 <body id="top">
 <header>
