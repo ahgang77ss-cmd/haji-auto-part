@@ -845,6 +845,27 @@ body { margin:0 !important; }
 }
 </style>
 
+
+<style id="mobile-parts-fix">
+@media (max-width: 700px) {
+  html, body { width:100%; max-width:100%; overflow-x:hidden !important; }
+  .products-grid, .parts-grid, .product-grid {
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    width:100% !important;
+  }
+  .products-grid > *, .parts-grid > *, .product-grid > * {
+    width:100% !important;
+    min-width:0 !important;
+  }
+  .horizontal-scroll, .parts-scroll {
+    overflow-x:visible !important;
+    display:grid !important;
+    grid-template-columns:1fr !important;
+  }
+}
+</style>
+
 </head>
 <body id="top">
 <header>
