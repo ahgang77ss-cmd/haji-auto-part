@@ -1,0 +1,10 @@
+{
+  "name": "haji-yadaki-standalone",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Haji auto parts storefront with a standalone Node.js HTTP + SQLite backend",
+  "main": "server.js",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=22.5"},
+  "dependencies": {}
+}

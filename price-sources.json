@@ -1,0 +1,53 @@
+{
+  "updated_at": "2026-09-09T13:44:17.329524",
+  "sources": [
+    {
+      "name": "Yadakman",
+      "base": "https://yadackman.ir",
+      "sitemaps": [
+        "https://yadackman.ir/sitemap_index.xml",
+        "https://yadackman.ir/product-sitemap.xml"
+      ]
+    },
+    {
+      "name": "Isatec",
+      "base": "https://isatec.ir",
+      "sitemaps": [
+        "https://isatec.ir/wp-sitemap.xml",
+        "https://isatec.ir/product-sitemap.xml"
+      ]
+    },
+    {
+      "name": "Kama Yadak",
+      "base": "https://kamayadak.com",
+      "sitemaps": [
+        "https://kamayadak.com/sitemap.xml",
+        "https://kamayadak.com/sitemap_index.xml"
+      ]
+    },
+    {
+      "name": "YadakCar",
+      "base": "https://yadakcar.com",
+      "sitemaps": [
+        "https://yadakcar.com/sitemap_index.xml",
+        "https://yadakcar.com/product-sitemap.xml"
+      ]
+    },
+    {
+      "name": "Yadaki Sena",
+      "base": "https://yadaki-sena.ir",
+      "sitemaps": [
+        "https://yadaki-sena.ir/sitemap_index.xml",
+        "https://yadaki-sena.ir/product-sitemap.xml"
+      ]
+    },
+    {
+      "name": "Ghathe Bazar",
+      "base": "https://www.ghatehbazar.ir",
+      "sitemaps": [
+        "https://www.ghatehbazar.ir/sitemap.xml",
+        "https://www.ghatehbazar.ir/sitemap_index.xml"
+      ]
+    }
+  ]
+}

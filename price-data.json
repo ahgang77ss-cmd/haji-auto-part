@@ -1,0 +1,77 @@
+{
+  "checked_at": "1405/06/18",
+  "currency": "IRR?",
+  "unit_display": "تومان",
+  "source_urls": [
+    "https://yadaki-sena.ir/",
+    "https://persiayadak.com/",
+    "https://parsinyadak.com/",
+    "https://kamayadak.com/showcategories?catName=saipa"
+  ],
+  "prices": [
+    {
+      "name": "تسمه تایم پراید تیبا ساینا کوییک",
+      "price_toman": 1550000
+    },
+    {
+      "name": "لنت ترمز جلو تیبا",
+      "price_toman": 2236000
+    },
+    {
+      "name": "لنت ترمز عقب پراید",
+      "price_toman": 1169000
+    },
+    {
+      "name": "لنت ترمز عقب 405",
+      "price_toman": 2500000
+    },
+    {
+      "name": "لنت ترمز عقب رانا",
+      "price_toman": 2601000
+    },
+    {
+      "name": "لنت ترمز جلو رانا",
+      "price_toman": 2777000
+    },
+    {
+      "name": "موتور فن پژو 405 خاری",
+      "price_toman": 2971000
+    },
+    {
+      "name": "موتور فن پژو 405 پیچی",
+      "price_toman": 3026000
+    },
+    {
+      "name": "آفتامات دینام ایسکرا",
+      "price_toman": 1890000
+    },
+    {
+      "name": "سنسور اکسیژن زیمنس",
+      "price_toman": 4090000
+    },
+    {
+      "name": "مقاومت فن بخاری (رزیستور HVAC) 405",
+      "price_toman": 970000
+    },
+    {
+      "name": "مقاومت فن بخاری (رزیستور HVAC) تیبا",
+      "price_toman": 970000
+    },
+    {
+      "name": "کیت کلاچ 200 میلی متری پراید",
+      "price_toman": 5681000
+    },
+    {
+      "name": "استارت تیبا ساینا کوییک",
+      "price_toman": 4816500
+    },
+    {
+      "name": "کیت تسمه تایم شرکتی سایپا یدک مناسب تیبا 2",
+      "price_toman": 1506700
+    },
+    {
+      "name": "سنسور دور موتور",
+      "price_toman": 494000
+    }
+  ]
+}
