@@ -866,6 +866,67 @@ body { margin:0 !important; }
 }
 </style>
 
+
+<style id="FINAL-MOBILE-CATALOG-FIX">
+/* FINAL: never horizontally trap the parts catalog on phones */
+@media (max-width: 700px) {
+  #cars, #cars .wrap, #cars .car-grid, #cars .car-row {
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    box-sizing:border-box !important;
+  }
+  #cars .car-row {
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    overflow:visible !important;
+  }
+  #cars .car-parts {
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    width:100% !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    height:auto !important;
+    min-height:0 !important;
+    max-height:none !important;
+    overflow:visible !important;
+    flex-wrap:initial !important;
+    padding:0 !important;
+  }
+  #cars .car-part {
+    display:grid !important;
+    grid-template-columns:64px minmax(0,1fr) !important;
+    width:100% !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    flex:initial !important;
+    flex-basis:auto !important;
+    height:auto !important;
+    min-height:120px !important;
+    box-sizing:border-box !important;
+    overflow:visible !important;
+  }
+  #cars .car-part .part-photo {
+    grid-column:1 !important;
+    grid-row:1 / span 3 !important;
+    width:64px !important;
+    height:64px !important;
+    min-width:64px !important;
+    min-height:64px !important;
+  }
+  #cars .car-part .cp-sku,
+  #cars .car-part .cp-name,
+  #cars .car-part .cp-foot {
+    grid-column:2 !important;
+    width:100% !important;
+    min-width:0 !important;
+  }
+  #cars .car-part .cp-foot { margin-top:6px !important; }
+  html,body { overflow-x:hidden !important; }
+}
+</style>
+
 </head>
 <body id="top">
 <header>

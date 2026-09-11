@@ -252,6 +252,7 @@ function safeStaticPath(urlPath) {
   if (pathname === '/') pathname = '/index.html';
   if (pathname === '/admin') pathname = '/admin.html';
   if (pathname === '/categories') pathname = '/categories.html';
+  if (pathname === '/category.html') pathname = '/categories.html';
   if (pathname === '/order-success') pathname = '/order-success.html';
   const candidate = path.resolve(ROOT, '.' + pathname);
   if (candidate !== ROOT && !candidate.startsWith(ROOT + path.sep)) return null;
