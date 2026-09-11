@@ -625,6 +625,94 @@ header{background:rgba(7,10,15,.82);box-shadow:0 12px 40px rgba(0,0,0,.25)}
 @media(max-width:900px){.catalog-filter-bar{position:relative!important;top:auto!important;padding:14px!important}.catalog-filter-title{flex-basis:100%}.catalog-filter-bar label{flex:1 1 220px}.catalog-filter-bar select{width:100%;min-width:0!important}.catalog-fitment-card span:not(.fitment-badge){min-width:100%}.car-visual{border-right:0!important;border-bottom:1px solid #34414e!important}}@media(max-width:600px){#cars .sec-head h2{font-size:24px}.catalog-filter-bar label{flex-basis:100%}.catalog-filter-bar>span#catalogCount{margin-inline-start:0!important;width:100%;text-align:center}.car-parts{padding:8px!important}}
 </style>
 <style id="final-footer-css">.site-footer{margin-top:70px;background:radial-gradient(circle at 78% 15%,rgba(255,181,46,.08),transparent 30%),linear-gradient(180deg,#0b1118 0%,#080c12 100%);border-top:1px solid rgba(255,181,46,.22);padding:64px 0 24px;position:relative}.site-footer:before{content:"";position:absolute;inset:0 0 auto 0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,181,46,.55),transparent)}.site-footer .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1.15fr 1.2fr;gap:42px;margin-bottom:42px}.site-footer .footer-col h5{color:#fff;font-size:14px;margin:0 0 18px;padding-bottom:10px;position:relative}.site-footer .footer-col h5:after{content:"";position:absolute;right:0;bottom:0;width:34px;height:2px;background:var(--amber);border-radius:99px}.site-footer .footer-col ul{list-style:none;margin:0;padding:0}.site-footer .footer-col li{margin:0 0 11px;color:var(--text-dim);font-size:13px}.site-footer .footer-col a{color:var(--text-dim);transition:.2s}.site-footer .footer-col a:hover{color:var(--amber);padding-right:4px}.footer-logo{font-size:20px;font-weight:900;color:#fff;margin-bottom:12px}.footer-logo span{color:var(--amber)}.footer-brand p{max-width:330px;line-height:1.9;color:var(--text-dim);font-size:13px}.footer-owner{display:flex;align-items:center;gap:10px;margin-top:22px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;width:max-content;max-width:100%;background:rgba(255,255,255,.02)}.footer-owner .owner-dot{color:var(--amber);font-size:10px}.footer-owner strong{display:block;color:#fff;font-size:13px}.footer-owner small{display:block;color:var(--steel);margin-top:3px}.footer-contact li{display:flex;gap:7px;align-items:baseline}.footer-contact .contact-label{color:#fff;font-weight:700;min-width:54px}.site-footer .footer-bottom{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:15px;font-size:12px;color:var(--steel)}@media(max-width:900px){.site-footer .footer-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.site-footer{padding:48px 0 22px}.site-footer .footer-grid{grid-template-columns:1fr;gap:28px}.site-footer .footer-bottom{flex-direction:column;align-items:flex-start}}</style>
+
+<style id="responsive-final-v2">
+/* ===== Responsive pass ===== */
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+img,svg,video{max-width:100%;height:auto}
+.wrap{width:100%;max-width:1180px}
+
+/* Desktop navigation */
+@media (max-width: 900px){
+  header{position:sticky}
+  .header-inner{height:auto;min-height:68px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;gap:10px}
+  .logo{min-width:0;max-width:48%}
+  .logo .name b{font-size:15px;white-space:normal}
+  .logo .name span{font-size:9px}
+  nav{display:block;order:3;width:100%;overflow-x:auto;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav ul{gap:8px;padding:0 0 2px;font-size:12px;white-space:nowrap}
+  nav li{flex:0 0 auto}
+  nav a{display:block;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.02)}
+  .header-actions{margin-inline-start:auto;gap:7px;min-width:0}
+  .header-actions .btn-primary{padding:9px 11px;font-size:12px}
+  .hero{padding:50px 0 42px}
+  .hero-inner{grid-template-columns:1fr;gap:28px}
+  .hero h1{font-size:clamp(30px,7vw,42px);line-height:1.35}
+  .hero p.lead{font-size:14px;max-width:none}
+  .hero-visual{order:-1}
+  .hero-visual svg{width:min(240px,70vw);margin:auto}
+  .lookup-box{max-width:none}
+  .trust-inner{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bins-grid,.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sec-head{gap:10px}
+  .sec-head h2{font-size:26px}
+  .catalog-filter-bar{width:100%}
+  .car-row{width:100%!important;grid-template-columns:1fr!important;direction:rtl!important}
+  .car-visual{width:100%;border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .car-parts{width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden}
+}
+
+@media (max-width: 600px){
+  .wrap{padding-left:14px!important;padding-right:14px!important}
+  .header-inner{padding-top:8px;padding-bottom:8px}
+  .logo{max-width:52%}
+  .logo .mark{width:30px;height:30px}
+  .logo .name b{font-size:12px}
+  .header-actions{gap:5px}
+  .header-actions .btn-primary{padding:8px 9px;font-size:11px}
+  .header-actions .account-trigger span{display:none}
+  nav ul{font-size:11px}
+  .hero{padding:38px 0 32px}
+  .hero h1{font-size:29px}
+  .hero .tag{font-size:10px;padding:6px 9px;margin-bottom:16px}
+  .hero p.lead{font-size:13px;line-height:2}
+  .lookup-box{padding:14px}
+  .lookup-row{flex-direction:column}
+  .lookup-row input,.lookup-row button{width:100%;min-height:46px}
+  .trust-inner{grid-template-columns:1fr 1fr}
+  .bins-grid,.products-grid{grid-template-columns:1fr!important}
+  .product-card{min-width:0;width:100%}
+  .product-thumb{height:180px!important}
+  .sec-head h2{font-size:23px}
+  .sec-head p{font-size:11px}
+  .catalog-filter-bar{padding:10px!important}
+  .catalog-filter-title strong{font-size:15px}
+  .catalog-filter-bar label{flex-basis:100%!important;width:100%}
+  .catalog-filter-bar select{width:100%!important;min-width:0!important}
+  .catalog-fitment-card{font-size:10px}
+  .car-visual{padding:18px!important}
+  .car-visual h3{font-size:18px!important}
+  .car-photo{height:200px!important;min-height:200px!important}
+  .car-parts{height:auto!important;min-height:0!important;padding:8px!important;display:flex!important;flex-wrap:nowrap!important}
+  .car-part{flex:0 0 170px!important;width:170px!important;min-width:170px!important;height:260px!important;min-height:260px!important}
+  .site-footer .footer-grid{grid-template-columns:1fr!important}
+  .footer-owner{width:100%;max-width:100%}
+  .order-form{padding:14px}
+  .order-modal{width:calc(100vw - 20px)!important;max-height:90vh}
+  .cart-drawer{width:100vw!important}
+}
+
+@media (max-width: 380px){
+  .logo .name b{font-size:11px}
+  .header-actions .btn-primary{padding:7px 7px;font-size:10px}
+  .hero h1{font-size:25px}
+  .trust-inner{grid-template-columns:1fr}
+  .car-part{flex-basis:160px!important;width:160px!important;min-width:160px!important}
+}
+</style>
+
 </head>
 <body id="top">
 <header>
