@@ -928,43 +928,53 @@ body { margin:0 !important; }
 </style>
 
 
-<style id="mobile-horizontal-parts">
-@media (max-width: 700px) {
-  /* Only the product list inside each car section becomes a horizontal carousel. */
-  .products-grid, .parts-grid, .product-grid {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    gap: 12px !important;
-    padding: 4px 2px 14px !important;
-    scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
+<style id="FINAL-CAR-PARTS-HORIZONTAL-MOBILE">
+@media (max-width:700px){
+  /* Each car keeps its own parts in a horizontal carousel. */
+  #cars .car-parts{
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    align-items:stretch !important;
+    gap:12px !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    height:300px !important;
+    min-height:300px !important;
+    max-height:300px !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    padding:10px !important;
+    box-sizing:border-box !important;
+    direction:ltr !important;
+    -webkit-overflow-scrolling:touch !important;
+    scroll-snap-type:x proximity !important;
+    scrollbar-width:thin !important;
   }
 
-  .products-grid > *, .parts-grid > *, .product-grid > * {
-    flex: 0 0 78% !important;
-    width: 78% !important;
-    max-width: 78% !important;
-    min-width: 0 !important;
-    scroll-snap-align: start;
+  #cars .car-parts .car-part{
+    display:flex !important;
+    flex-direction:column !important;
+    flex:0 0 78% !important;
+    width:78% !important;
+    min-width:78% !important;
+    max-width:78% !important;
+    height:270px !important;
+    min-height:270px !important;
+    max-height:270px !important;
+    box-sizing:border-box !important;
+    scroll-snap-align:start !important;
+    direction:rtl !important;
   }
 
-  /* Keep the page itself from becoming horizontally scrollable. */
-  html, body {
-    overflow-x: hidden !important;
-    max-width: 100% !important;
+  #cars .car-part .cp-foot{
+    margin-top:auto !important;
+    width:100% !important;
+    grid-column:auto !important;
   }
 
-  /* Visible scrollbar on supported browsers so the horizontal list is obvious. */
-  .products-grid::-webkit-scrollbar,
-  .parts-grid::-webkit-scrollbar,
-  .product-grid::-webkit-scrollbar {
-    height: 6px;
-  }
+  #cars .car-parts::-webkit-scrollbar{height:6px !important;}
 }
 </style>
 
